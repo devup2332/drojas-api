@@ -15,6 +15,13 @@ functions:
           path: /signin
           method: POST 
           cors: true
+  sendEmail:
+    handler: src/functions/portafolio/sendEmail.SendEmail
+    events:
+      - http:
+          path: /sendEmail
+          method: POST 
+          cors: true
 
 plugins:
   - serverless-dotenv-plugin
