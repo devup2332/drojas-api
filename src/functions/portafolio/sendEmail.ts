@@ -20,11 +20,11 @@ export const SendEmail: APIGatewayProxyHandler = async (event) => {
     to: environments.NODEMAILER.USER,
     subject: "Job Offer",
     html: `
-    from: ${email}
-    subject: Job Offer
-    fullName: ${fullName}
-    phone: ${phone}
-    message: ${message}
+    from: ${email} <br>
+    subject: Job Offer <br> 
+    fullName: ${fullName} <br> 
+    phone: ${phone} <br> 
+    message: ${message} <br>
     `,
   };
 

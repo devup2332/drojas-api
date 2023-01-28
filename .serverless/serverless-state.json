@@ -186,7 +186,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/drojas-api/dev/1674886946851-2023-01-28T06:22:26.851Z/drojas-api.zip"
+                "S3Key": "serverless/drojas-api/dev/1674925841479-2023-01-28T17:10:41.479Z/drojas-api.zip"
               },
               "Handler": "src/functions/auth/loginUser.LoginUser",
               "Runtime": "nodejs14.x",
@@ -220,7 +220,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/drojas-api/dev/1674886946851-2023-01-28T06:22:26.851Z/drojas-api.zip"
+                "S3Key": "serverless/drojas-api/dev/1674925841479-2023-01-28T17:10:41.479Z/drojas-api.zip"
               },
               "Handler": "src/functions/portafolio/sendEmail.SendEmail",
               "Runtime": "nodejs14.x",
@@ -247,24 +247,24 @@
               "SendEmailLogGroup"
             ]
           },
-          "LoginUserLambdaVersionbp8h2OCfPx3dw2Divo2EZXVelubYgFlLR4QeDyPwEs": {
+          "LoginUserLambdaVersionKe2OXY4MeLkfflVK0r1uCf7oNhObS8nX2CfMe2icO2k": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "LoginUserLambdaFunction"
               },
-              "CodeSha256": "qEPxG9ZUFDftS+bNq3KAr0IZTarVG8xKOArTKF1Nc+k="
+              "CodeSha256": "iNISVm1atGs5wvM+mSbpjaAPsBOikw3W7kA3MG5fxhE="
             }
           },
-          "SendEmailLambdaVersionIgTk3NwALkYybp8wf6cRytocvoGqwjYdiXSNzkAw": {
+          "SendEmailLambdaVersionyME2Fu59ssUGjeyOIt1qzNglG5WDCBOrybms6RUFk": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "SendEmailLambdaFunction"
               },
-              "CodeSha256": "qEPxG9ZUFDftS+bNq3KAr0IZTarVG8xKOArTKF1Nc+k="
+              "CodeSha256": "iNISVm1atGs5wvM+mSbpjaAPsBOikw3W7kA3MG5fxhE="
             }
           },
           "ApiGatewayRestApi": {
@@ -491,7 +491,7 @@
               "SendEmailLambdaPermissionApiGateway"
             ]
           },
-          "ApiGatewayDeployment1674886945739": {
+          "ApiGatewayDeployment1674925840266": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -593,7 +593,7 @@
           "LoginUserLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "LoginUserLambdaVersionbp8h2OCfPx3dw2Divo2EZXVelubYgFlLR4QeDyPwEs"
+              "Ref": "LoginUserLambdaVersionKe2OXY4MeLkfflVK0r1uCf7oNhObS8nX2CfMe2icO2k"
             },
             "Export": {
               "Name": "sls-drojas-api-dev-LoginUserLambdaFunctionQualifiedArn"
@@ -602,7 +602,7 @@
           "SendEmailLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "SendEmailLambdaVersionIgTk3NwALkYybp8wf6cRytocvoGqwjYdiXSNzkAw"
+              "Ref": "SendEmailLambdaVersionyME2Fu59ssUGjeyOIt1qzNglG5WDCBOrybms6RUFk"
             },
             "Export": {
               "Name": "sls-drojas-api-dev-SendEmailLambdaFunctionQualifiedArn"
@@ -768,7 +768,7 @@
         "timeout": 6,
         "runtime": "nodejs14.x",
         "vpc": {},
-        "versionLogicalId": "LoginUserLambdaVersionbp8h2OCfPx3dw2Divo2EZXVelubYgFlLR4QeDyPwEs"
+        "versionLogicalId": "LoginUserLambdaVersionKe2OXY4MeLkfflVK0r1uCf7oNhObS8nX2CfMe2icO2k"
       },
       "sendEmail": {
         "handler": "src/functions/portafolio/sendEmail.SendEmail",
@@ -806,7 +806,7 @@
         "timeout": 6,
         "runtime": "nodejs14.x",
         "vpc": {},
-        "versionLogicalId": "SendEmailLambdaVersionIgTk3NwALkYybp8wf6cRytocvoGqwjYdiXSNzkAw"
+        "versionLogicalId": "SendEmailLambdaVersionyME2Fu59ssUGjeyOIt1qzNglG5WDCBOrybms6RUFk"
       }
     },
     "configValidationMode": "warn",
@@ -831,7 +831,7 @@
     "isDashboardMonitoringPreconfigured": false
   },
   "package": {
-    "artifactDirectoryName": "serverless/drojas-api/dev/1674886946851-2023-01-28T06:22:26.851Z",
+    "artifactDirectoryName": "serverless/drojas-api/dev/1674925841479-2023-01-28T17:10:41.479Z",
     "artifact": "drojas-api.zip"
   }
 }
