@@ -1,0 +1,26 @@
+service: drojas-api
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  region: us-east-1
+
+useDotenv: true
+
+functions:
+  loginUser:
+    handler: src/functions/auth/loginUser.LoginUser
+    events:
+      - http:
+          path: /signin
+          method: POST 
+          cors: true
+
+plugins:
+  - serverless-dotenv-plugin
+  - serverless-esbuild
+  - serverless-offline
+
+custom:
+  serverless-offline:
+    httpPort: 4000
