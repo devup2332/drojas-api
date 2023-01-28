@@ -2,3 +2,4 @@ node_modules
 .esbuild
 .env*
 yarn.lock
+.serverless
